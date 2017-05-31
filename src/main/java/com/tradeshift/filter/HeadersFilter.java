@@ -11,14 +11,12 @@ import javax.ws.rs.ext.Provider;
 import java.io.IOException;
 import java.util.UUID;
 
-
 /**
  * A client filter that will append the user agent and Tradeshift
  * tenant headers to every outbound request.
  */
 @Provider
 public class HeadersFilter implements ClientRequestFilter {
-
     private static final String TENANT_HEADER = "X-Tradeshift-TenantId";
     private static final String USER_AGENT_HEADER = "User-Agent";
 
