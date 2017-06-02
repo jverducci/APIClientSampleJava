@@ -38,6 +38,8 @@ public class SampleClientDemo {
 
     /**
      * DEMO CODE STARTS HERE!!
+     * (Demo assumes that you have previously accepted an invoice from another
+     * company before running this.)
      */
     public static void main(final String[] args) throws Exception {
         /*
