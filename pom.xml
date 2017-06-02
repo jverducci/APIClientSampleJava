@@ -6,13 +6,13 @@
   <artifactId>APIClientSampleJava</artifactId>
   <version>1.0.0-SNAPSHOT</version>
   <name>APIClientSampleJava</name>
-  <description>Sample Client for the Tradeshift API using 3-legged OAUTH for signing requests.</description>
+  <description>Sample Client for the Tradeshift API using OAUTH1 for signing requests.</description>
 
   <prerequisites>
     <maven>${maven.version}</maven>
   </prerequisites>
 
-	<properties>
+  <properties>
     <!-- General Build Properties -->
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <java.version>1.8</java.version>
@@ -20,37 +20,37 @@
 
     <!-- Dependency Properties -->
     <apache.commons.version>3.5</apache.commons.version>
-		<guava.version>22.0</guava.version>
-		<jersey2.version>2.26-b03</jersey2.version>
+    <guava.version>22.0</guava.version>
+    <jersey2.version>2.26-b03</jersey2.version>
     <logback.version>1.2.3</logback.version>
     <slf4j.version>1.7.25</slf4j.version>
 
     <!-- Plugin Properties -->
     <maven.compiler.plugin.version>3.6.1</maven.compiler.plugin.version>
-	</properties>
+  </properties>
 
   <dependencies>
     <!-- Jersey 2 Dependencies -->
-		<dependency>
-			<groupId>org.glassfish.jersey.core</groupId>
-			<artifactId>jersey-client</artifactId>
-			<version>${jersey2.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.glassfish.jersey.security</groupId>
-			<artifactId>oauth1-client</artifactId>
-			<version>${jersey2.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.glassfish.jersey.security</groupId>
-			<artifactId>oauth1-signature</artifactId>
-			<version>${jersey2.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.glassfish.jersey.media</groupId>
-			<artifactId>jersey-media-json-jackson</artifactId>
-			<version>${jersey2.version}</version>
-		</dependency>
+    <dependency>
+      <groupId>org.glassfish.jersey.core</groupId>
+      <artifactId>jersey-client</artifactId>
+      <version>${jersey2.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.glassfish.jersey.security</groupId>
+      <artifactId>oauth1-client</artifactId>
+      <version>${jersey2.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.glassfish.jersey.security</groupId>
+      <artifactId>oauth1-signature</artifactId>
+      <version>${jersey2.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.glassfish.jersey.media</groupId>
+      <artifactId>jersey-media-json-jackson</artifactId>
+      <version>${jersey2.version}</version>
+    </dependency>
     <dependency>
       <groupId>org.glassfish.jersey.connectors</groupId>
       <artifactId>jersey-apache-connector</artifactId>
@@ -80,7 +80,7 @@
       <artifactId>commons-lang3</artifactId>
       <version>${apache.commons.version}</version>
     </dependency>
-	</dependencies>
+  </dependencies>
 
   <build>
     <plugins>
